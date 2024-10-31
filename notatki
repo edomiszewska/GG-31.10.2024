@@ -1,0 +1,39 @@
+===========================================================
+
+31.10.24  NOTATKI
+
+===========================================================
+
+unsigned - beda dodatnie, nigdy ujemne - jest to oganiczenie
+
+smallint - przy id zeby mniej miejsca zajmowalo
+
+constraint - nalozymy ograniczenie i wiemy ze nic innego nie moze sie zdarzyc
+
+constraint check < 1988 (sprawdz czy jest wieksze, blokujemy zeby nikt sie nie urodzil przed tym)
+
+BLOKOWANIE JEDNEJ RZECZY TO CONSTRAINT
+
+enum - zabezpieczanie
+plec enum('M','K') - nadajemy wartosc i tylko to bwdziemy mogli wpisac - albo M albo K
+
+plec CHAR(3) check (PLEC IN('M', 'K'));
+
+
+jak dodamy FIRST alter table -
+to skoczy nam na poczatek
+
+
+alter table person add wiek int first ;
+
+- wiek powinien byc pierwszy w tabeli
+
+a after to zamiast first tylko dodajesz na koncu po jakiej tabeli.
+
+
+alter table klienci add plec enum('M','K') after nazwisko;
+
+
+
+
+
