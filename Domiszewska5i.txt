@@ -1,0 +1,11 @@
+
+====NOTATKI do cwiczenia====
+
+ENUM
+Przy dodaniu plci do tabeli klienci po nazwisku nie mozna wpisac innej wartosci niz K lub M dzięki enum, gdy jest wprowadzona inna wartosc jest ona usuwana a pole jest puste, ale nie null.
+
+CASCADE, SET NULL
+przy usuwaniu danej tabeli bedzie ustawiana wartosc null, a przy aktualizacji nowa wartosc bedzie w obu tabelach (poniewaz ustawione on delete set null, a przy update cascade).
+
+RESTRICT
+jesli jest ustawione restrict on delete lub update to wtedy nie mozna ani usuwac ani modyfikowac tego, przy czym ustawlismy restrict.
