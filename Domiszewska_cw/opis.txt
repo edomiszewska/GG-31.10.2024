@@ -1,0 +1,4 @@
+1. przy dodaniu plci do tabeli klienci po nazwisku nie mozna wpisac innej wartosci niz K lub M dzięki enum.
+2. przy usuwaniu autora bedzie ustawiana wartosc null a przy aktualizacji nowa wartosc bedzie w obu tabelach.
+przy wydawnictwie przy usuwaniu bedzie usuwanie kaskadowe czyli usunie sie wszedzie - w obu tabelach a przy aktualizacji bedzie ustawiana wartosc null.
+3. restrict nie pozwala na zmiane w obu tabelach klucza obcego ani na usuniecie rekordu w tabeli autor - dopoki istnieje powiazany z nimi rekord w innej tabeli.
